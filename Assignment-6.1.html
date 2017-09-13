@@ -1,0 +1,56 @@
+<html><!-- Head of the Root -->
+	<head><!-- child sub root of the html tag as head tag  -->
+    	<!-- it is a title tag -->
+		<title>Basic Salary</title>
+	</head>
+	
+		<style type="text/css">
+		/*div style*/
+			div
+			{
+			width: 250px;
+			height: 50px;
+			background-color: green;
+			}
+		</style>
+	<!-- it is a body tag -->	
+	<body>	
+		
+		<script language="JavaScript">
+		/* Calculating Bonus */
+		 	function bonus()
+	     	{
+	        var sal =document.form1.txtsalary.value;
+	        var hr =document.form1.txthours.value;
+	        var updated=document.value; 
+	        	if ((sal>=15000) && (hr>=10))
+	        	{
+	        	document.write("<div>Bonus is " +0.1*sal+ "</div>");
+	            document.write("<div>Final Salary is " +1.1*sal+ "</div>");
+	            } 
+	        	
+	        	else 
+	        	{
+	        	document.write("<div>Bonus is " +0.05*sal+"</div>");
+	            document.write("<div>Final Salary is " +1.05*sal+"</div>");
+	    
+	        	}
+	       
+	    	}
+		</script>
+		 
+		<form name=form1> <!-- Enter the salary and work hours -->
+	        Enter Basic salary of the employee:
+	       <input type="text" name="txtsalary" size=10>
+	       <br>
+	       <br>
+	       Enter the working hours:
+	       <input type="text" name="txthours" size=10>
+	       <br>
+	       <br>
+	       <input type="button" value="Calculate" onClick='bonus();'>  
+	    </form>
+		
+
+	</body>
+</html>
